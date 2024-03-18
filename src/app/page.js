@@ -1,113 +1,334 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="container mx-auto min-h-screen py-24">
+      <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center justify-between">
+        <div className="">
+          <div className="text-sm text-sky-400 font-semibold">
+            Hey There 👋 I am
+          </div>
+          <h1 className="text-5xl text-slate-800 font-bold my-3">
+            Kaixiang Chen
+          </h1>
+          <div className="text-lg text-slate-900 mb-5">
+            Software Engineer and Web Developer
+          </div>
+          <div className="text-md text-gray-600"></div>
+        </div>
+        <div className="">
+          <Image
+            className="rounded-full border-8 border-orange-600"
+            src="/avatar.png"
+            alt="Kaix"
+            width={480}
+            height={480}
+          />
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="max-w-5xl w-full flex flex-col lg:flex-row items-center justify-between my-5">
+        <div className="basis-1/2 flex flex-col space-y-4 px-2">
+          <div className="flex items-center">
+            <h6 className="rounded-full bg-orange-600 py-1 px-3 text-white font-medium">
+              About Me
+            </h6>
+          </div>
+          <div className="p-2">
+            I'm a full-stack web developer with 10 years of experience
+          </div>
+        </div>
+        <div className="basis-1/2 flex flex-col space-y-4 px-2">
+          <div className="flex items-center">
+            <h6 className="rounded-full bg-orange-600 py-1 px-3 text-white font-medium">
+              Contact Me
+            </h6>
+          </div>
+          <div className="">
+            <ul className="flex flex-row space-x-2">
+              <li className="rounded-full border border-gray-300 hover:bg-gray-300 px-2 py-2">
+                <a
+                  href="mailto: me@kaixsean.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className=""
+                    src="/email.svg"
+                    alt="mailtome"
+                    width={24}
+                    height={24}
+                  />
+                </a>
+              </li>
+              <li className="rounded-full border border-gray-300 hover:bg-gray-300 px-2 py-2">
+                <a
+                  href="https://www.linkedin.com/in/kaixiangchen/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className=""
+                    src="/linkedin.svg"
+                    alt="likedin"
+                    width={24}
+                    height={24}
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="max-w-5xl w-full px-2 my-5">
+        <div className="text-3xl text-center my-3">Skills</div>
+        <div>
+          <ul className="py-5 grid grid-cols-4 gap-4 place-items-stretch">
+            <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <Image
+                    className="m-auto"
+                    src="/skills/php.svg"
+                    alt="php"
+                    width={48}
+                    height={48}
+                  />
+                  <span>PHP</span>
+                </div>
+              </div>
+            </li>
+            <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <Image
+                    className="m-auto"
+                    src="/skills/python.svg"
+                    alt="python"
+                    width={48}
+                    height={48}
+                  />
+                  <span>Python</span>
+                </div>
+              </div>
+            </li>
+            <li className="py-10 px-16 bg-slate-600 rounded px-3 py-2 hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <Image
+                    className="m-auto"
+                    src="/skills/mysql-logo.svg"
+                    alt="MySQL"
+                    width={48}
+                    height={48}
+                  />
+                  <span>MySQL</span>
+                </div>
+              </div>
+            </li>
+            <li className="py-10 px-16 bg-slate-600 rounded px-3 py-2 hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <Image
+                    className="m-auto"
+                    src="/skills/mongodb.svg"
+                    alt="mongo"
+                    width={48}
+                    height={48}
+                  />
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </li>
+            <li className="py-10 px-16 bg-slate-600 rounded px-3 py-2 hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <Image
+                    className="m-auto"
+                    src="/skills/linux.svg"
+                    alt="linux"
+                    width={48}
+                    height={48}
+                  />
+                  <span>Linux</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul className="py-5 grid grid-cols-4 gap-4 place-items-stretch">
+            <li className="py-10 px-16 bg-slate-600 rounded px-3 py-2 hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <Image
+                    className="m-auto"
+                    src="/skills/js.svg"
+                    alt="javascript"
+                    width={48}
+                    height={48}
+                  />
+                  <span>Javascript</span>
+                </div>
+              </div>
+            </li>
+            <li className="py-10 px-16 bg-slate-600 rounded px-3 py-2 hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <Image
+                    className="m-auto"
+                    src="/skills/tailwindcss.svg"
+                    alt="tailwindcss"
+                    width={48}
+                    height={48}
+                  />
+                  <span>Tailwind CSS</span>
+                </div>
+              </div>
+            </li>
+            <li className="py-10 px-16 bg-slate-600 rounded px-3 py-2 hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <Image
+                    className="m-auto"
+                    src="/skills/bootstrap.svg"
+                    alt="bootstrap"
+                    width={48}
+                    height={48}
+                  />
+                  <span>Bootstrap</span>
+                </div>
+              </div>
+            </li>
+            <li className="py-10 px-16 bg-slate-600 rounded px-3 py-2 hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <Image
+                    className="m-auto"
+                    src="/skills/jquery.svg"
+                    alt="bootstrap"
+                    width={48}
+                    height={48}
+                  />
+                  <span>jQuery</span>
+                </div>
+              </div>
+            </li>
+            <li className="py-10 px-16 bg-slate-600 rounded px-3 py-2 hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <div className="flex flex-row">
+                    <Image
+                      className="m-auto"
+                      src="/skills/html-5.svg"
+                      alt="html5"
+                      width={48}
+                      height={48}
+                    />
+                    <Image
+                      className="m-auto"
+                      src="/skills/css-3.svg"
+                      alt="css3"
+                      width={48}
+                      height={48}
+                    />
+                  </div>
+                  <span>HTML & CSS</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul className="py-5 grid grid-cols-4 gap-4 place-items-stretch">
+            <li className="py-10 px-16 bg-slate-600 rounded px-3 py-2 hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <Image
+                    className="m-auto"
+                    src="/skills/flutter.svg"
+                    alt="Flutter"
+                    width={48}
+                    height={48}
+                  />
+                  <span>Flutter</span>
+                </div>
+              </div>
+            </li>
+            <li className="py-10 px-16 bg-slate-600 rounded px-3 py-2 hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <Image
+                    className="m-auto"
+                    src="/skills/google-cloud.svg"
+                    alt="GoogleCloud"
+                    width={48}
+                    height={48}
+                  />
+                  <span>Google Cloud Platform</span>
+                </div>
+              </div>
+            </li>
+            <li className="py-10 px-16 bg-slate-600 rounded px-3 py-2 hover:bg-orange-200">
+              <div className="place-self-center">
+                <div className="flex flex-col space-y-4 justify-center text-center">
+                  <Image
+                    className="m-auto"
+                    src="/skills/git.svg"
+                    alt="git"
+                    width={48}
+                    height={48}
+                  />
+                  <span>Git Source Control</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
+      <footer className="max-w-5xl w-full p-2  my-5">
+        <div className="h-24 rounded-t-3xl bg-slate-800"></div>
+        <div className="flex flex-row items-center justify-between">
+          <div>
+            <p className="">© 2024. All rights reserved.</p>
+          </div>
+          <div className="">
+            <div className="flex flex-col items-center">
+              <ul className="flex flex-row space-x-2">
+                <li className="rounded-full border border-gray-300 bg-gray-300 hover:bg-gray-300 px-2 py-2">
+                  <a
+                    href="mailto: me@kaixsean.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      className=""
+                      src="/email.svg"
+                      alt="mailtome"
+                      width={24}
+                      height={24}
+                    />
+                  </a>
+                </li>
+                <li className="rounded-full border border-gray-300 bg-gray-300 hover:bg-gray-300 px-2 py-2">
+                  <a
+                    href="https://www.linkedin.com/in/kaixiangchen/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      className=""
+                      src="/linkedin.svg"
+                      alt="likedin"
+                      width={24}
+                      height={24}
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
-  );
+  )
 }
