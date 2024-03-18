@@ -6,7 +6,7 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row items-center justify-between">
         <div className="">
           <div className="flex flex-row space-x-3">
-            <div className="text-5xl">I'm</div>
+            <div className="text-5xl">I&apos;m</div>
             <h1 className="text-7xl font-bold leading-9 text-orange-300">Kaixiang Chen</h1>
           </div>
           <div className="text-2xl my-7">
@@ -27,7 +27,7 @@ export default function Home() {
       <div className="my-5">
         <h6 className="text-5xl py-2 font-medium">About</h6>
         <div className="p-2 text-xl">
-          I'm a full-stack web developer with 10 years of experience
+          I&apos;m a full-stack web developer with 10 years of experience
         </div>
       </div>
       <div className="px-2 my-5">
