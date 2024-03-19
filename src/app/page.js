@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-row justify-between container mx-auto max-w-5xl py-5">
+      <div className="flex flex-row justify-between container mx-auto max-w-5xl py-5 px-3">
         <div>Logo</div>
         <div>
           <ul className="flex flex-row space-x-5">
@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <div className="min-h-screen py-5">
         <div className="border-b shadow-md">
-          <div className="container mx-auto max-w-5xl py-10">
+          <div className="container mx-auto max-w-5xl py-10 px-5">
             <div className="flex flex-col lg:flex-row items-center justify-between">
               <div className="">
                 <div className="flex flex-row space-x-3">
@@ -41,16 +41,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="my-5 container mx-auto max-w-5xl py-10">
-          <h6 className="text-5xl py-2 font-medium">About</h6>
-          <div className="p-2 text-xl">
+        <div className="my-5 container mx-auto max-w-5xl py-10 px-3">
+          <h6 className="text-3xl md:text-5xl py-2 font-medium">About</h6>
+          <div className="p-2 text-md md:text-xl">
             I&apos;m a full-stack web developer with 10 years of experience
           </div>
         </div>
         <div className="px-2 my-5 container mx-auto max-w-5xl py-10">
           <div className="text-5xl text-center my-3">Skills</div>
           <div>
-            <ul className="py-5 grid grid-cols-4 gap-4 place-items-stretch">
+            <ul className="py-5 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 place-items-stretch">
               <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
@@ -124,7 +124,7 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <ul className="py-5 grid grid-cols-4 gap-4 place-items-stretch">
+            <ul className="py-5 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 place-items-stretch">
               <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
@@ -216,7 +216,7 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <ul className="py-5 grid grid-cols-4 gap-4 place-items-stretch">
+            <ul className="py-5 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 place-items-stretch">
               <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
