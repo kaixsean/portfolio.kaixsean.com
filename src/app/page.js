@@ -4,12 +4,12 @@ export default function Home() {
   return (
     <main>
       <div className="flex flex-row justify-between container mx-auto max-w-5xl py-5 px-3">
-        <div>Logo</div>
+        <div className="text-xl">Logo</div>
         <div>
           <ul className="flex flex-row space-x-5">
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <li className="text-xl">About</li>
+            <li className="text-xl">Portfolio</li>
+            <li className="text-xl">Contact</li>
           </ul>
         </div>
       </div>
@@ -19,12 +19,12 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row items-center justify-between">
               <div className="">
                 <div className="flex flex-row space-x-3">
-                  <div className="text-3xl">I&apos;m</div>
-                  <h1 className="text-5xl font-bold leading-7 text-orange-300">
+                  <div className="text-2xl md:text-3xl">I&apos;m</div>
+                  <h1 className="text-4xl md:text-5xl font-bold leading-7 text-orange-300">
                     Kaixiang Chen
                   </h1>
                 </div>
-                <div className="text-2xl my-7">
+                <div className="text-md md:text-2xl my-7">
                   Software Engineer and Web Developer
                 </div>
                 <div className="text-md text-gray-600"></div>
