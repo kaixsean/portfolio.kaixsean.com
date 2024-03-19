@@ -4,9 +4,77 @@ export default function Home() {
   return (
     <main>
       <div className="flex flex-row justify-between container mx-auto max-w-5xl py-5 px-3">
-        <div className="text-xl">Logo</div>
+        <div className="text-xl">
+          <Image
+            className="m-auto"
+            src="/logo.png"
+            alt="logo"
+            width={48}
+            height={48}
+          />
+        </div>
         <div>
-          <ul className="flex flex-row space-x-5">
+          <div>
+            <button aria-label="Toggle Menu" className="sm:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-8 w-8 text-gray-900 dark:text-gray-100"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+            <div class="fixed right-0 top-16 h-screen w-full bg-gray-200/90 transition-all duration-300 ease-in-out dark:bg-gray-950/90 hidden translate-x-0">
+              <div class="flex justify-end">
+                <button class="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="text-gray-900 dark:text-gray-100"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <nav class="fixed mt-8 h-full">
+                <div class="px-12 py-4">
+                  <a
+                    class="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                    href="/"
+                  >
+                    About
+                  </a>
+                </div>
+                <div class="px-12 py-4">
+                  <a
+                    class="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                    href="/posts"
+                  >
+                    Portfolio
+                  </a>
+                </div>
+                <div class="px-12 py-4">
+                  <a
+                    class="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                    href="/tags"
+                  >
+                    Contact
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <ul className="hidden md:flex flex-row space-x-5">
             <li className="text-xl">About</li>
             <li className="text-xl">Portfolio</li>
             <li className="text-xl">Contact</li>
