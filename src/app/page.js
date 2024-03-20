@@ -2,87 +2,93 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main>
-      <div className="bg-customBlack-800 flex flex-row justify-between container mx-auto max-w-5xl py-5 px-3">
-        <div className="text-xl">
-          <Image
-            className="m-auto"
-            src="/logo.png"
-            alt="logo"
-            width={48}
-            height={48}
-          />
-        </div>
-        <div>
-          <div>
-            <button aria-label="Toggle Menu" className="sm:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-8 w-8 text-gray-900 dark:text-gray-100"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
-            <div className="fixed right-0 top-16 h-screen w-full bg-gray-200/90 transition-all duration-300 ease-in-out dark:bg-gray-950/90 hidden translate-x-0">
-              <div className="flex justify-end">
-                <button className="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="text-gray-900 dark:text-gray-100"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-              <nav className="fixed mt-8 h-full">
-                <div className="px-12 py-4">
-                  <a
-                    className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                    href="/"
-                  >
-                    About
-                  </a>
-                </div>
-                <div className="px-12 py-4">
-                  <a
-                    className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                    href="/posts"
-                  >
-                    Portfolio
-                  </a>
-                </div>
-                <div className="px-12 py-4">
-                  <a
-                    className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                    href="/tags"
-                  >
-                    Contact
-                  </a>
-                </div>
-              </nav>
-            </div>
+    <main className="">
+      <div className="bg-customBrown-500 dark:bg-customBlack-800">
+        <div className=" flex flex-row justify-between container mx-auto max-w-5xl py-5 px-3">
+          <div className="text-xl">
+            <Image
+              className="m-auto"
+              src="/logo.png"
+              alt="logo"
+              width={48}
+              height={48}
+            />
           </div>
-          <ul className="hidden md:flex flex-row space-x-5">
-            <li className="text-xl">About</li>
-            <li className="text-xl">Portfolio</li>
-            <li className="text-xl">Contact</li>
-          </ul>
+          <div>
+            <div>
+              <button aria-label="Toggle Menu" className="sm:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-8 w-8 text-gray-900 dark:text-gray-100"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div className="fixed right-0 top-16 h-screen w-full bg-gray-200/90 transition-all duration-300 ease-in-out dark:bg-gray-950/90 hidden translate-x-0">
+                <div className="flex justify-end">
+                  <button
+                    className="mr-8 mt-11 h-8 w-8"
+                    aria-label="Toggle Menu"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="text-gray-900 dark:text-gray-100"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <nav className="fixed mt-8 h-full">
+                  <div className="px-12 py-4">
+                    <a
+                      className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                      href="/"
+                    >
+                      About
+                    </a>
+                  </div>
+                  <div className="px-12 py-4">
+                    <a
+                      className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                      href="/posts"
+                    >
+                      Portfolio
+                    </a>
+                  </div>
+                  <div className="px-12 py-4">
+                    <a
+                      className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                      href="/tags"
+                    >
+                      Contact
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <ul className="hidden md:flex flex-row space-x-5">
+              <li className="text-xl">About</li>
+              <li className="text-xl">Portfolio</li>
+              <li className="text-xl">Contact</li>
+            </ul>
+          </div>
         </div>
       </div>
+
       <div className="min-h-screen pb-5">
-        <div className=" bg-customBlack-800 border-b border-customBlack-800 border-b-2 shadow-lg">
+        <div className="bg-customBrown-500 dark:bg-customBlack-800 border-b border-customBrown-500 dark:border-customBlack-800 border-b-2 shadow-lg">
           <div className="container mx-auto max-w-5xl py-10 px-5">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="">
@@ -90,7 +96,7 @@ export default function Home() {
                   <div className="text-2xl md:text-2xl lg:text-3xl">
                     I&apos;m
                   </div>
-                  <h1 className="text-4xl md:text-3xl lg:text-5xl font-bold leading-7 md:leading-8 lg:leading-9 text-customYellow-500">
+                  <h1 className="text-4xl md:text-3xl lg:text-5xl font-bold leading-7 md:leading-8 lg:leading-9 text-customBrown-300 dark:text-customYellow-500">
                     Kaixiang Chen
                   </h1>
                 </div>
@@ -101,7 +107,7 @@ export default function Home() {
               </div>
               <div className="md:hidden">
                 <Image
-                  className="rounded-full border-8 border-customYellow-500"
+                  className="rounded-full border-8 border-customBrown-300 dark:border-customYellow-500"
                   src="/avatar.png"
                   alt="Kaix"
                   width={260}
@@ -110,7 +116,7 @@ export default function Home() {
               </div>
               <div className="hidden md:block">
                 <Image
-                  className="rounded-full border-8 border-customYellow-500"
+                  className="rounded-full border-8 border-customBrown-300 dark:border-customYellow-500"
                   src="/avatar.png"
                   alt="Kaix"
                   width={480}
@@ -130,7 +136,7 @@ export default function Home() {
           <div className="text-5xl text-center my-3">Skills</div>
           <div>
             <ul className="py-5 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 place-items-stretch">
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -144,7 +150,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -158,7 +164,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -172,7 +178,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -186,7 +192,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -204,7 +210,7 @@ export default function Home() {
           </div>
           <div>
             <ul className="py-5 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 place-items-stretch">
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -218,7 +224,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -232,7 +238,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -246,7 +252,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -260,7 +266,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <div className="flex flex-row">
@@ -276,7 +282,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <div className="flex flex-row">
@@ -296,7 +302,7 @@ export default function Home() {
           </div>
           <div>
             <ul className="py-5 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 place-items-stretch">
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -310,7 +316,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -324,7 +330,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customGreen-500 dark:hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -344,15 +350,15 @@ export default function Home() {
       </div>
       <div className="relative py-5">
         <div className="flex flex-row">
-          <div className="basis-1/3 border-y-2 border-y-customYellow-500 bg-customBlack-700 h-48"></div>
-          <div className="basis-1/3 bg-customBlack-700 h-48"></div>
-          <div className="basis-1/3 border-y-2 border-y-customYellow-500 bg-customBlack-700 h-48"></div>
+          <div className="basis-1/3 border-y border-y-customBrown-300 dark:border-y-customYellow-500 bg-customBrown-500 dark:bg-customBlack-700 h-48"></div>
+          <div className="basis-1/3 bg-customBrown-500 dark:bg-customBlack-700 h-48"></div>
+          <div className="basis-1/3 border-y border-y-customBrown-300 dark:border-y-customYellow-500 bg-customBrown-500 dark:bg-customBlack-700 h-48"></div>
         </div>
         <div className="absolute inset-x-0 top-0">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center text-3xl">Contact Me</div>
-            <div className="flex flex-row space-x-3 justify-center my-7">
-              <div className="border px-3 py-2 rounded border-customBlack-900 bg-customBlack-900">
+            <div className="flex flex-row space-x-3 justify-center my-14">
+              <div className="border px-3 py-2 rounded border-customBrown-500 dark:border-customBlack-900 bg-customBrown-700 dark:bg-customBlack-900">
                 <a
                   href="mailto: me@kaixsean.com"
                   target="_blank"
@@ -366,10 +372,12 @@ export default function Home() {
                     width={24}
                     height={24}
                   />
-                  <span className="text-customYellow-500 font-light text-sm">me@kaixsean.com</span>
+                  <span className="text-customBrown-300 dark:text-customYellow-500 font-light text-sm">
+                    me@kaixsean.com
+                  </span>
                 </a>
               </div>
-              <div className="flex flex-row space-x-2 border px-3 py-2 rounded border-customBlack-900 bg-customBlack-900">
+              <div className="flex flex-row space-x-2 border px-3 py-2 rounded border-customBrown-500 dark:border-customBlack-900 bg-customBrown-700 dark:bg-customBlack-900">
                 <Image
                   className=""
                   src="/location-pin.svg"
@@ -377,7 +385,9 @@ export default function Home() {
                   width={24}
                   height={24}
                 />
-                <span className="text-customYellow-500 font-light text-sm">Taipei, Taiwan</span>
+                <span className="text-customBrown-300 dark:text-customYellow-500 font-light text-sm">
+                  Taipei, Taiwan
+                </span>
               </div>
             </div>
           </div>
@@ -420,7 +430,9 @@ export default function Home() {
         </div>
       </div>
       <footer className="pt-5 pb-10 container mx-auto max-w-5xl">
-        <p className="text-center">© 2024. All rights reserved.</p>
+        <p className="text-center text-customBrown-300 dark:text-customYellow-500 font-light">
+          © 2024. All rights reserved.
+        </p>
       </footer>
     </main>
   )
