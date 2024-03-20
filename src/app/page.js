@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-row justify-between container mx-auto max-w-5xl py-5 px-3">
+      <div className="bg-customBlack-800 flex flex-row justify-between container mx-auto max-w-5xl py-5 px-3">
         <div className="text-xl">
           <Image
             className="m-auto"
@@ -29,43 +29,43 @@ export default function Home() {
                 />
               </svg>
             </button>
-            <div class="fixed right-0 top-16 h-screen w-full bg-gray-200/90 transition-all duration-300 ease-in-out dark:bg-gray-950/90 hidden translate-x-0">
-              <div class="flex justify-end">
-                <button class="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu">
+            <div className="fixed right-0 top-16 h-screen w-full bg-gray-200/90 transition-all duration-300 ease-in-out dark:bg-gray-950/90 hidden translate-x-0">
+              <div className="flex justify-end">
+                <button className="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    class="text-gray-900 dark:text-gray-100"
+                    className="text-gray-900 dark:text-gray-100"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                 </button>
               </div>
-              <nav class="fixed mt-8 h-full">
-                <div class="px-12 py-4">
+              <nav className="fixed mt-8 h-full">
+                <div className="px-12 py-4">
                   <a
-                    class="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                    className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
                     href="/"
                   >
                     About
                   </a>
                 </div>
-                <div class="px-12 py-4">
+                <div className="px-12 py-4">
                   <a
-                    class="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                    className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
                     href="/posts"
                   >
                     Portfolio
                   </a>
                 </div>
-                <div class="px-12 py-4">
+                <div className="px-12 py-4">
                   <a
-                    class="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                    className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
                     href="/tags"
                   >
                     Contact
@@ -81,25 +81,36 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <div className="min-h-screen py-5">
-        <div className="border-b shadow-md">
+      <div className="min-h-screen pb-5">
+        <div className=" bg-customBlack-800 border-b border-customBlack-800 border-b-2 shadow-lg">
           <div className="container mx-auto max-w-5xl py-10 px-5">
-            <div className="flex flex-col lg:flex-row items-center justify-between">
+            <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="">
                 <div className="flex flex-row space-x-3">
-                  <div className="text-2xl md:text-3xl">I&apos;m</div>
-                  <h1 className="text-4xl md:text-5xl font-bold leading-7 text-orange-300">
+                  <div className="text-2xl md:text-2xl lg:text-3xl">
+                    I&apos;m
+                  </div>
+                  <h1 className="text-4xl md:text-3xl lg:text-5xl font-bold leading-7 md:leading-8 lg:leading-9 text-customYellow-500">
                     Kaixiang Chen
                   </h1>
                 </div>
-                <div className="text-md md:text-2xl my-7">
+                <div className="text-md md:text-xl lg:text-2xl my-7">
                   Software Engineer and Web Developer
                 </div>
                 <div className="text-md text-gray-600"></div>
               </div>
-              <div className="">
+              <div className="md:hidden">
                 <Image
-                  className="rounded-full border-8 border-orange-600"
+                  className="rounded-full border-8 border-customYellow-500"
+                  src="/avatar.png"
+                  alt="Kaix"
+                  width={260}
+                  height={260}
+                />
+              </div>
+              <div className="hidden md:block">
+                <Image
+                  className="rounded-full border-8 border-customYellow-500"
                   src="/avatar.png"
                   alt="Kaix"
                   width={480}
@@ -119,7 +130,7 @@ export default function Home() {
           <div className="text-5xl text-center my-3">Skills</div>
           <div>
             <ul className="py-5 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 place-items-stretch">
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -133,7 +144,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -147,7 +158,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -161,7 +172,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -175,7 +186,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -193,7 +204,7 @@ export default function Home() {
           </div>
           <div>
             <ul className="py-5 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 place-items-stretch">
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -207,7 +218,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -221,7 +232,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -235,7 +246,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -249,7 +260,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <div className="flex flex-row">
@@ -265,7 +276,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <div className="flex flex-row">
@@ -285,7 +296,7 @@ export default function Home() {
           </div>
           <div>
             <ul className="py-5 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 place-items-stretch">
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -299,7 +310,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -313,7 +324,7 @@ export default function Home() {
                   </div>
                 </div>
               </li>
-              <li className="py-10 px-16 bg-slate-600 rounded hover:bg-orange-200">
+              <li className="py-10 px-16 bg-customBlack-700 rounded-lg hover:bg-customYellow-600 hover:text-white">
                 <div className="place-self-center">
                   <div className="flex flex-col space-y-4 justify-center text-center">
                     <Image
@@ -333,15 +344,15 @@ export default function Home() {
       </div>
       <div className="relative py-5">
         <div className="flex flex-row">
-          <div className="basis-1/3 border-y border-y-indigo-500 bg-gray-300 h-48"></div>
-          <div className="basis-1/3 bg-gray-300 h-48"></div>
-          <div className="basis-1/3 border-y border-y-indigo-500 bg-gray-300 h-48"></div>
+          <div className="basis-1/3 border-y-2 border-y-customYellow-500 bg-customBlack-700 h-48"></div>
+          <div className="basis-1/3 bg-customBlack-700 h-48"></div>
+          <div className="basis-1/3 border-y-2 border-y-customYellow-500 bg-customBlack-700 h-48"></div>
         </div>
         <div className="absolute inset-x-0 top-0">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center text-3xl">Contact Me</div>
             <div className="flex flex-row space-x-3 justify-center my-7">
-              <div className="border px-3 py-2 rounded-md">
+              <div className="border px-3 py-2 rounded border-customBlack-900 bg-customBlack-900">
                 <a
                   href="mailto: me@kaixsean.com"
                   target="_blank"
@@ -355,10 +366,10 @@ export default function Home() {
                     width={24}
                     height={24}
                   />
-                  <span>me@kaixsean.com</span>
+                  <span className="text-customYellow-500 font-light text-sm">me@kaixsean.com</span>
                 </a>
               </div>
-              <div className="flex flex-row space-x-2 border px-3 py-2 rounded-md">
+              <div className="flex flex-row space-x-2 border px-3 py-2 rounded border-customBlack-900 bg-customBlack-900">
                 <Image
                   className=""
                   src="/location-pin.svg"
@@ -366,7 +377,7 @@ export default function Home() {
                   width={24}
                   height={24}
                 />
-                <span>Taipei, Taiwan</span>
+                <span className="text-customYellow-500 font-light text-sm">Taipei, Taiwan</span>
               </div>
             </div>
           </div>
