@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Skill from '../components/Skill'
 
 function SkillSide(props) {

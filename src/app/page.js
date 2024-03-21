@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import Navbar from './layouts/Navbar'
 import Intro from './layouts/Intro'
+import About from './layouts/About'
 import SkillSide from './layouts/SkillSide'
 import Contact from './layouts/Contact'
 import Footer from './layouts/Footer'
@@ -34,12 +34,7 @@ export default function Home() {
       <Navbar />
       <div className="min-h-screen pb-5">
         <Intro />
-        <div className="my-5 container mx-auto max-w-5xl py-10 px-3">
-          <h6 className="text-3xl md:text-5xl py-2 font-medium">About</h6>
-          <div className="p-2 text-md md:text-xl">
-            I&apos;m a full-stack web developer with 10 years of experience
-          </div>
-        </div>
+        <About />
         <div className="px-2 my-5 container mx-auto max-w-5xl py-10">
           <div className="text-5xl text-center my-3">Skills</div>
           <SkillSide skills={BackendDATA} />
