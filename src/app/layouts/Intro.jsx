@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 function Intro() {
   return (
-    <div className="bg-customBrown-500 dark:bg-customBlack-800 border-b border-customBrown-500 dark:border-customBlack-800 border-b-2 shadow-lg">
+    <div className="border-b border-customBrown-500 dark:border-customBlack-800 border-b-2 shadow-lg">
       <div className="container mx-auto max-w-5xl py-10 px-5">
-        <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="mt-14 flex flex-col md:flex-row items-center justify-between">
           <div className="">
             <div className="flex flex-row space-x-3">
               <div className="text-2xl md:text-2xl lg:text-3xl">I&apos;m</div>
