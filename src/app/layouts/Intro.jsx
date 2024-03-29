@@ -7,7 +7,7 @@ function Intro() {
         <div className="mt-14 flex flex-col md:flex-row items-center justify-between">
           <div className="">
             <div className="flex flex-row space-x-3">
-              <div className="text-2xl md:text-2xl lg:text-3xl">I&apos;m</div>
+              <div className="text-2xl md:text-2xl lg:text-3xl">I&apos;M</div>
               <h1 className="text-4xl md:text-3xl lg:text-5xl font-bold leading-7 md:leading-8 lg:leading-9 text-customBrown-300 dark:text-customYellow-500">
                 Kaixiang Chen
               </h1>
