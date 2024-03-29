@@ -30,7 +30,7 @@ const OtherDATA = [
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="bg-customBrown-500 dark:bg-customBlack-800">
       <Navbar />
       <div className="min-h-screen pb-5">
         <Intro />
