@@ -6,26 +6,26 @@ import Contact from './layouts/Contact'
 import Footer from './layouts/Footer'
 
 const BackendDATA = [
-  { name: 'PHP', src: 'php.svg' },
-  { name: 'Python', src: 'python.svg' },
-  { name: 'MySQL', src: 'mysql-logo.svg' },
-  { name: 'MongoDB', src: 'mongodb.svg' },
-  { name: 'Linux', src: 'linux.svg' },
+  { id: 'backend-01', name: 'PHP', src: 'php.svg' },
+  { id: 'backend-02', name: 'Python', src: 'python.svg' },
+  { id: 'backend-03', name: 'MySQL', src: 'mysql-logo.svg' },
+  { id: 'backend-04', name: 'MongoDB', src: 'mongodb.svg' },
+  { id: 'backend-05', name: 'Linux', src: 'linux.svg' },
 ]
 
 const FrontendDATA = [
-  { name: 'JavaScript', src: 'js.svg' },
-  { name: 'Tailwind CSS', src: 'tailwindcss.svg' },
-  { name: 'Bootstrap', src: 'bootstrap.svg' },
-  { name: 'jQuery', src: 'jquery.svg' },
-  { name: 'HTML', src: 'html-5.svg' },
-  { name: 'CSS', src: 'css-3.svg' },
+  { id: 'frontend-01', name: 'JavaScript', src: 'js.svg' },
+  { id: 'frontend-02', name: 'Tailwind CSS', src: 'tailwindcss.svg' },
+  { id: 'frontend-03', name: 'Bootstrap', src: 'bootstrap.svg' },
+  { id: 'frontend-04', name: 'jQuery', src: 'jquery.svg' },
+  { id: 'frontend-05', name: 'HTML', src: 'html-5.svg' },
+  { id: 'frontend-06', name: 'CSS', src: 'css-3.svg' },
 ]
 
 const OtherDATA = [
-  { name: 'Flutter', src: 'flutter.svg' },
-  { name: 'Google Cloud Platform', src: 'google-cloud.svg' },
-  { name: 'Git Source Control', src: 'git.svg' },
+  { id: 'other-01', name: 'Flutter', src: 'flutter.svg' },
+  { id: 'other-02', name: 'Google Cloud Platform', src: 'google-cloud.svg' },
+  { id: 'other-03', name: 'Git Source Control', src: 'git.svg' },
 ]
 
 export default function Home() {
