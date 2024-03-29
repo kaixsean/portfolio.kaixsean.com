@@ -36,7 +36,9 @@ export default function Home() {
         <Intro />
         <About />
         <div className="px-2 my-5 container mx-auto max-w-5xl py-10">
-          <div className="text-5xl text-center my-3">Skills</div>
+          <h6 id="skills" className="text-5xl text-center my-3">
+            Skills
+          </h6>
           <SkillSide skills={BackendDATA} />
           <SkillSide skills={FrontendDATA} />
           <SkillSide skills={OtherDATA} />

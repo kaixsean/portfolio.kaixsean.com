@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 import clsx from 'clsx'
 
@@ -90,9 +91,16 @@ function Navbar() {
           </div>
         </div>
         <ul id="menu-mobile" className="hidden md:flex flex-row space-x-5">
-          <li className="text-xl">About</li>
+          <li className="text-xl">
+            <Link href="#about">About</Link>
+          </li>
+          <li className="text-xl">
+            <Link href="#skills">Skills</Link>
+          </li>
           <li className="text-xl">Portfolio</li>
-          <li className="text-xl">Contact</li>
+          <li className="text-xl">
+            <Link href="#contact">Contact</Link>
+          </li>
         </ul>
       </div>
     </div>
