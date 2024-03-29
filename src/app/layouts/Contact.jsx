@@ -10,7 +10,9 @@ function Contact() {
       </div>
       <div className="absolute inset-x-0 top-0">
         <div className="container mx-auto max-w-5xl">
-          <div className="text-center text-3xl">Contact Me</div>
+          <h6 id="contact" className="text-center text-3xl">
+            Contact Me
+          </h6>
           <div className="flex flex-row space-x-3 justify-center my-14">
             <div className="border px-3 py-2 rounded border-customBrown-500 dark:border-customBlack-900 bg-customBrown-700 dark:bg-customBlack-900">
               <a
