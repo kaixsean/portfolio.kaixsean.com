@@ -66,7 +66,7 @@ function Navbar() {
               <div className="px-12 py-4">
                 <a
                   className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                  href="/"
+                  href="#about"
                 >
                   About
                 </a>
@@ -74,15 +74,15 @@ function Navbar() {
               <div className="px-12 py-4">
                 <a
                   className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                  href="/"
+                  href="#skills"
                 >
-                  Portfolio
+                  Skills
                 </a>
               </div>
               <div className="px-12 py-4">
                 <a
                   className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                  href="/"
+                  href="#contact"
                 >
                   Contact
                 </a>
@@ -97,7 +97,6 @@ function Navbar() {
           <li className="text-xl">
             <Link href="#skills">Skills</Link>
           </li>
-          <li className="text-xl">Portfolio</li>
           <li className="text-xl">
             <Link href="#contact">Contact</Link>
           </li>
