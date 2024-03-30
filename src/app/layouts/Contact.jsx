@@ -23,7 +23,7 @@ function Contact() {
               >
                 <Image
                   className=""
-                  src="/email.svg"
+                  src="/icons/email.svg"
                   alt="mailtome"
                   width={24}
                   height={24}
@@ -36,7 +36,7 @@ function Contact() {
             <div className="flex flex-row space-x-2 border px-3 py-2 rounded border-customBrown-500 dark:border-customBlack-900 bg-customBrown-700 dark:bg-customBlack-900">
               <Image
                 className=""
-                src="/location-pin.svg"
+                src="/icons/location-pin.svg"
                 alt="location"
                 width={24}
                 height={24}
@@ -59,7 +59,7 @@ function Contact() {
               >
                 <Image
                   className=""
-                  src="/email.svg"
+                  src="/icons/email.svg"
                   alt="mailtome"
                   width={24}
                   height={24}
@@ -74,7 +74,7 @@ function Contact() {
               >
                 <Image
                   className=""
-                  src="/linkedin.svg"
+                  src="/icons/linkedin.svg"
                   alt="likedin"
                   width={24}
                   height={24}
