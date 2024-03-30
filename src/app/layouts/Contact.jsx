@@ -1,4 +1,7 @@
-import Image from 'next/image'
+import EmailIcon from '/public/icons/email.svg'
+import LocationIcon from '/public/icons/location-pin.svg'
+import LinkedinIcon from '/public/icons/linkedin.svg'
+import GithubIcon from '/public/icons/github.svg'
 
 function Contact() {
   return (
@@ -19,28 +22,16 @@ function Contact() {
                 href="mailto: me@kaixsean.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-row space-x-3"
+                className="flex flex-row items-center space-x-3"
               >
-                <Image
-                  className=""
-                  src="/email.svg"
-                  alt="mailtome"
-                  width={24}
-                  height={24}
-                />
+                <EmailIcon fill="white" width="24" height="24" />
                 <span className="text-customBrown-300 dark:text-customYellow-500 font-light text-sm">
                   me@kaixsean.com
                 </span>
               </a>
             </div>
-            <div className="flex flex-row space-x-2 border px-3 py-2 rounded border-customBrown-500 dark:border-customBlack-900 bg-customBrown-700 dark:bg-customBlack-900">
-              <Image
-                className=""
-                src="/location-pin.svg"
-                alt="location"
-                width={24}
-                height={24}
-              />
+            <div className="flex flex-row items-center space-x-2 border px-3 py-2 rounded border-customBrown-500 dark:border-customBlack-900 bg-customBrown-700 dark:bg-customBlack-900">
+              <LocationIcon fill="white" width="24" height="24" />
               <span className="text-customBrown-300 dark:text-customYellow-500 font-light text-sm">
                 Taipei, Taiwan
               </span>
@@ -57,13 +48,7 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  className=""
-                  src="/email.svg"
-                  alt="mailtome"
-                  width={24}
-                  height={24}
-                />
+                <EmailIcon fill="white" width="24" height="24" />
               </a>
             </li>
             <li>
@@ -72,13 +57,16 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  className=""
-                  src="/linkedin.svg"
-                  alt="likedin"
-                  width={24}
-                  height={24}
-                />
+                <LinkedinIcon fill="white" width="24" height="24" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/kaixsean"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GithubIcon fill="white" width="24" height="24" />
               </a>
             </li>
           </ul>
