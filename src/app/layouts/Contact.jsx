@@ -4,9 +4,9 @@ function Contact() {
   return (
     <div className="relative py-5">
       <div className="flex flex-row">
-        <div className="basis-1/3 border-y border-y-customBrown-300 dark:border-y-customYellow-500 bg-customBrown-500 dark:bg-customBlack-700 h-48"></div>
-        <div className="basis-1/3 bg-customBrown-500 dark:bg-customBlack-700 h-48"></div>
-        <div className="basis-1/3 border-y border-y-customBrown-300 dark:border-y-customYellow-500 bg-customBrown-500 dark:bg-customBlack-700 h-48"></div>
+        <div className="basis-1/3 border-y border-y-customBrown-300 dark:border-y-customYellow-500 bg-customBrown-300 dark:bg-customBlack-700 h-48"></div>
+        <div className="basis-1/3 bg-customBrown-300 dark:bg-customBlack-700 h-48"></div>
+        <div className="basis-1/3 border-y border-y-customBrown-300 dark:border-y-customYellow-500 bg-customBrown-300 dark:bg-customBlack-700 h-48"></div>
       </div>
       <div className="absolute inset-x-0 top-0">
         <div className="container mx-auto max-w-5xl">
