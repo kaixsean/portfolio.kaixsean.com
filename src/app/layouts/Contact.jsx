@@ -2,6 +2,7 @@ import EmailIcon from '/public/icons/email.svg'
 import LocationIcon from '/public/icons/location-pin.svg'
 import LinkedinIcon from '/public/icons/linkedin.svg'
 import GithubIcon from '/public/icons/github.svg'
+import TwitterIcon from '/public/icons/twitter.svg'
 
 function Contact() {
   return (
@@ -39,25 +40,16 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="absolute inset-x-0 bottom-2">
+      <div className="absolute inset-x-0 bottom-1">
         <div className="flex flex-col items-center">
           <ul className="flex flex-row space-x-3">
             <li>
               <a
-                href="mailto: me@kaixsean.com"
+                href="https://twitter.com/kaixsean"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <EmailIcon fill="white" width="24" height="24" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/kaixiangchen/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LinkedinIcon fill="white" width="24" height="24" />
+                <TwitterIcon fill="white" width="32" height="32" />
               </a>
             </li>
             <li>
@@ -66,7 +58,16 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <GithubIcon fill="white" width="24" height="24" />
+                <GithubIcon fill="white" width="32" height="32" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kaixiangchen/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkedinIcon fill="white" width="32" height="32" />
               </a>
             </li>
           </ul>
