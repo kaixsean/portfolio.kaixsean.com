@@ -1,4 +1,5 @@
 import { inter } from '@/app/ui/fonts'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       >
         {children}
       </body>
+      <GoogleAnalytics gaId="G-C1JJEYLZ2C" />
     </html>
   )
 }
