@@ -1,11 +1,7 @@
-import { inter } from '@/app/ui/fonts'
-import { GoogleAnalytics } from '@next/third-parties/google'
 import './globals.css'
 
-export const metadata = {
-  title: "Kaixiang's Portfolio",
-  description: "Kaixiang's Portfolio",
-}
+import { inter } from '@/app/ui/fonts';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default function RootLayout({ children }) {
   return (
