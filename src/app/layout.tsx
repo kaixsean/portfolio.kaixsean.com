@@ -5,8 +5,8 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Kaixiang's Portfolio",
-  description: "Kaixiang's Portfolio.",
+  title: "Kaixiang",
+  description: "I'm Kaixiang Chen. I'm a full-stack software engineer.",
   metadataBase: new URL('https://www.kaixsean.com'),
 }
 
