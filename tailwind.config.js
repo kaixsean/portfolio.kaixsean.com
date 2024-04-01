@@ -19,6 +19,7 @@ module.exports = {
         },
         customBrown: {
           300: '#dabe99',
+          400: '#c69a61',
           500: '#76675a',
           700: '#5b5b5c',
         },
