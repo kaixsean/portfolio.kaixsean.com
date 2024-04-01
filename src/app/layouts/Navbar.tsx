@@ -95,13 +95,13 @@ function Navbar() {
           </div>
         </div>
         <ul id="menu-mobile" className="hidden md:flex flex-row space-x-5">
-          <li className="text-xl">
+          <li className="text-xl hover:text-amber-500">
             <Link href="#about">About</Link>
           </li>
-          <li className="text-xl">
+          <li className="text-xl hover:text-amber-500">
             <Link href="#skills">Skills</Link>
           </li>
-          <li className="text-xl">
+          <li className="text-xl hover:text-amber-500">
             <Link href="#contact">Contact</Link>
           </li>
         </ul>
