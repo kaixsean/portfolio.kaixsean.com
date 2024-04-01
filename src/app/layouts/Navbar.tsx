@@ -9,6 +9,9 @@ function Navbar() {
   const handleToggle = () => {
     setVisible(!visible)
   }
+  const gotoAside = () => {
+    setVisible(!visible)
+  }
 
   return (
     <div className="fixed top-0 left-0 right-0 z-10 border-b border-customBrown-500/10 backdrop-blur shadow">
@@ -56,6 +59,7 @@ function Navbar() {
             </svg>
           </button>
           <div
+            onClick={gotoAside}
             className={clsx(
               'fixed right-0 top-14 h-screen w-full bg-gray-200/90 transition-all duration-300 ease-in-out dark:bg-gray-950/90 translate-x-0',
               visible ? 'hidden' : ''

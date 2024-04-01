@@ -9,7 +9,7 @@ function About() {
         <div className="p-2 text-md md:text-xl">
           <p className="leading-relaxed">
             I&apos;m a full-stack web developer with 10 years of experience, 2
-            years of which have been focused on API development.I also have 6
+            years of which have been focused on API development. I also have 6
             months of experience in cross-platform mobile app development using
             Flutter.
           </p>
