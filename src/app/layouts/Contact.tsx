@@ -30,12 +30,6 @@ function Contact() {
                 </span>
               </a>
             </div>
-            <div className="flex flex-row items-center space-x-2 border px-3 py-2 rounded border-customBrown-500 dark:border-customBlack-900 bg-customBrown-700 dark:bg-customBlack-900">
-              <LocationIcon fill="white" width="24" height="24" />
-              <span className="text-customBrown-300 dark:text-customYellow-500 font-light text-sm">
-                Taipei, Taiwan
-              </span>
-            </div>
           </div>
         </div>
       </div>
