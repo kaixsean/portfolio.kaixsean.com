@@ -45,15 +45,6 @@ function Contact() {
           <ul className="flex flex-row space-x-3">
             <li>
               <a
-                href="https://twitter.com/kaixsean"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <TwitterIcon fill="white" width="32" height="32" />
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://github.com/kaixsean"
                 target="_blank"
                 rel="noopener noreferrer"
