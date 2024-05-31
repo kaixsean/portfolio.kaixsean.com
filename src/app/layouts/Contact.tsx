@@ -2,7 +2,6 @@ import EmailIcon from '/public/icons/email.svg'
 import LocationIcon from '/public/icons/location-pin.svg'
 import LinkedinIcon from '/public/icons/linkedin.svg'
 import GithubIcon from '/public/icons/github.svg'
-import TwitterIcon from '/public/icons/twitter.svg'
 
 function Contact() {
   return (
