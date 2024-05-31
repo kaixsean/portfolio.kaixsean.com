@@ -8,20 +8,9 @@ function About() {
         <div className="basis-1/4 mt-5 border-t-2 border-customBrown-300 dark:border-y-customYellow-500"></div>
         <div className="p-2 text-md md:text-xl">
           <p className="leading-relaxed">
-            I&apos;m a full-stack web developer with 10 years of experience, 2
-            years of which have been focused on API development. I also have 6
-            months of experience in cross-platform mobile app development using
-            Flutter.
-          </p>
-          <p className="leading-relaxed">
-            In my previous roles, I was responsible for the development and
-            maintenance of multiple projects, include forum and marketplace. I
-            also have experience in design mobile web and developing
-            subscription services.
-          </p>
-          <p className="leading-relaxed">
-            I have demonstrated the ability to work independently and solve
-            problems, as well as collaborate with internal and external teams.
+            I am a full-stack engineer specializing in PHP and JavaScript, with
+            experience in Python and Flutter development. I am passionate about
+            making digital services easier and more enjoyable for people to use.
           </p>
         </div>
       </div>
