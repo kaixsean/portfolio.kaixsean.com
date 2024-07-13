@@ -17,13 +17,15 @@ function Navbar() {
     <div className="fixed top-0 left-0 right-0 z-10 border-b border-customBrown-500/10 backdrop-blur shadow">
       <div className="flex flex-row justify-between items-center container mx-auto max-w-5xl p-3">
         <div>
-          <Image
-            className="m-auto"
-            src="/logo.png"
-            alt="logo"
-            width={32}
-            height={32}
-          />
+          <Link href="/">
+            <Image
+              className="m-auto"
+              src="/logo.png"
+              alt="logo"
+              width={32}
+              height={32}
+            />
+          </Link>
         </div>
         <div className="md:hidden flex items-center">
           <button aria-label="Toggle Menu" onClick={handleToggle}>
