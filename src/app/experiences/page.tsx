@@ -13,6 +13,7 @@ export default function Page() {
                 <div className="border border-0 rounded-lg border-2 bg-customBrown-500">
                   <Link
                     href="https://www.ucunik.com/"
+                    target="_blank"
                     className="flex flex-col"
                   >
                     <Image
@@ -28,7 +29,7 @@ export default function Page() {
                   </Link>
                 </div>
                 <div className="border border-0 rounded-lg border-2 bg-customBrown-500">
-                  <Link href="https://play.google.com/store/apps/details?id=com.whale.WhaleFinder.app&hl=zh_TW">
+                  <Link href="https://play.google.com/store/apps/details?id=com.whale.WhaleFinder.app&hl=zh_TW" target="_blank">
                     <Image
                       className="rounded-t-lg -mt-0.5 overflow-hidden h-80"
                       src="/static/images/whalefinder.png"
