@@ -1,4 +1,18 @@
 /** @type {import('next').NextConfig} */
+const cspHeader = `
+    default-src 'self';
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.googletagmanager.com;
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com blob: data:;
+    font-src 'self' data:;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+    frame-ancestors 'none';
+    upgrade-insecure-requests;
+    connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;
+`
+
 const securityHeaders = [
   {
     key: 'X-DNS-Prefetch-Control',
@@ -10,7 +24,7 @@ const securityHeaders = [
   },
   {
     key: 'Content-Security-Policy',
-    value: 'default-src \'self\' kaixsean.com *.kaixsean.com; script-src:https://*.googletagmanager.com; img-src:*; connect-src:https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com'
+    value: cspHeader.replace(/\n/g, '')
   }
 ]
 
