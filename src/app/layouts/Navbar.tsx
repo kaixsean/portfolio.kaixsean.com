@@ -93,6 +93,14 @@ function Navbar() {
                   Contact
                 </a>
               </div>
+              <div className="px-12 py-4">
+                <a
+                  className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                  href="https://www.kaixsean.com" target="_blank"
+                >
+                  Blog
+                </a>
+              </div>
             </nav>
           </div>
         </div>
@@ -108,6 +116,9 @@ function Navbar() {
           </li>
           <li className="text-xl hover:text-amber-500">
             <Link href="/#contact">Contact</Link>
+          </li>
+          <li className="text-xl hover:text-amber-500">
+            <Link href="https://www.kaixsean.com" target="_blank">Blog</Link>
           </li>
         </ul>
       </div>
