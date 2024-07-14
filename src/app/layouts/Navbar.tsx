@@ -70,36 +70,24 @@ function Navbar() {
             <div className="flex justify-end"></div>
             <nav className="fixed mt-8 h-full">
               <div className="px-12 py-4">
-                <a
-                  className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                  href="#about"
-                >
-                  About
-                </a>
+                <Link className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                  href="/#about">About</Link>
               </div>
               <div className="px-12 py-4">
-                <a
-                  className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                  href="#skills"
-                >
-                  Skills
-                </a>
+                <Link className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                  href="/#skills">Skills</Link>
               </div>
               <div className="px-12 py-4">
-                <a
-                  className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                  href="#contact"
-                >
-                  Contact
-                </a>
+                <Link className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                  href="/experiences">Experiences</Link>
               </div>
               <div className="px-12 py-4">
-                <a
-                  className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                  href="https://www.kaixsean.com" target="_blank"
-                >
-                  Blog
-                </a>
+                <Link className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                  href="/#contact">Contact</Link>
+              </div>
+              <div className="px-12 py-4">
+                <Link className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                  href="https://www.kaixsean.com" target="_blank">Blog</Link>
               </div>
             </nav>
           </div>
