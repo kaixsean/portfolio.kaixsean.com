@@ -34,7 +34,7 @@ function Navbar() {
               viewBox="0 0 20 20"
               fill="currentColor"
               className={clsx(
-                'h-8 w-8 text-gray-900 dark:text-gray-100',
+                'h-8 w-8 text-white dark:text-gray-100',
                 visible ? '' : 'hidden'
               )}
             >
@@ -63,7 +63,7 @@ function Navbar() {
           <div
             onClick={gotoAside}
             className={clsx(
-              'fixed right-0 top-14 h-screen w-full bg-gray-200/90 transition-all duration-300 ease-in-out dark:bg-gray-950/90 translate-x-0',
+              'fixed right-0 top-14 h-screen w-full bg-gray-200/90 transition-all duration-300 ease-in-out dark:bg-gray-950/90 translate-x-0 c',
               visible ? 'hidden' : ''
             )}
           >
