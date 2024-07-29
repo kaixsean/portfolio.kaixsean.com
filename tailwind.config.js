@@ -27,6 +27,14 @@ module.exports = {
           300: '#5a7566',
           500: '#5a7b6c',
         },
+        customBlue: {
+          500: '#0339a5',
+          800: '#021f5a'
+        },
+        customOrange: {
+          500: '#ea7d42',
+          800: '#c95516'
+        }
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
