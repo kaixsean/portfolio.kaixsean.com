@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Page() {
   return (
     <div>
-      <div className="bg-sky-950">
+      <div className="bg-customBlue-500 dark:bg-customBlue-800">
         <div className="container mx-auto max-w-5xl py-10 px-5">
           <div className="space-y-2">
             <h2 className="text-xl lg:text-5xl mb-5">Projects</h2>
@@ -57,7 +57,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="bg-customBrown-500 dark:bg-customBlack-800">
+      <div className="bg-customOrange-500 dark:bg-customOrange-800">
         <div className="container mx-auto max-w-5xl py-10 px-5">
           <div className="space-y-2">
             <h2 className="text-xl lg:text-5xl mb-5">Personal Skill</h2>
@@ -93,7 +93,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="bg-sky-950">
+      <div className="bg-customBlue-500 dark:bg-customBlue-800">
         <div className="container mx-auto max-w-5xl py-10 px-5">
           <div className="space-y-2">
             <h2 className="text-xl lg:text-5xl mb-5">Education</h2>
