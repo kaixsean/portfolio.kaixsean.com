@@ -5,7 +5,7 @@ function Projects() {
   return (
     <div className='py-2'>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
-        <div className="border border-0 rounded-lg border-2 bg-customBrown-500">
+        <div className="border border-0 rounded-lg border-2 bg-customBlue-800 dark:bg-customBlue-500 hover:bg-customBlue-200 hover:text-customBlue-800">
           <Link
             href="https://www.ucunik.com/"
             target="_blank"
@@ -23,7 +23,7 @@ function Projects() {
             </h3>
           </Link>
         </div>
-        <div className="border border-0 rounded-lg border-2 bg-customBrown-500">
+        <div className="border border-0 rounded-lg border-2 bg-customBlue-800 dark:bg-customBlue-500 hover:bg-customBlue-200 hover:text-customBlue-800">
           <Link href="https://play.google.com/store/apps/details?id=com.whale.WhaleFinder.app&hl=zh_TW" target="_blank">
             <Image
               className="rounded-t-lg -mt-0.5 object-cover object-center md:h-52 lg:h-72"
@@ -35,7 +35,7 @@ function Projects() {
             <h3 className="my-2 text-center">WhaleFinder (Control Panel)</h3>
           </Link>
         </div>
-        <div className="border border-0 rounded-lg border-2 bg-customBrown-500">
+        <div className="border border-0 rounded-lg border-2 bg-customBlue-800 dark:bg-customBlue-500 hover:bg-customBlue-200 hover:text-customBlue-800">
           <Link href="https://www.kaixsean.com" target="_blank">
             <Image
               className="rounded-t-lg -mt-0.5 object-cover object-center md:h-52 lg:h-72"
