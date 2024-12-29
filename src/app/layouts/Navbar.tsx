@@ -100,7 +100,7 @@ function Navbar() {
             <Link href="/#skills">Skills</Link>
           </li>
           <li className="text-xl hover:text-amber-500">
-            <Link href="/experiences">Experiences</Link>
+            <Link href="/#projects">Projects</Link>
           </li>
           <li className="text-xl hover:text-amber-500">
             <Link href="/#contact">Contact</Link>

@@ -2,6 +2,7 @@ import Navbar from './layouts/Navbar'
 import Intro from './layouts/Intro'
 import About from './layouts/About'
 import SkillSide from './layouts/SkillSide'
+import Projects from './layouts/Projects'
 import Contact from './layouts/Contact'
 import Footer from './layouts/Footer'
 
@@ -42,6 +43,12 @@ export default function Home() {
           <SkillSide skills={BackendDATA} />
           <SkillSide skills={FrontendDATA} />
           <SkillSide skills={OtherDATA} />
+        </div>
+        <div className="px-2 my-5 container mx-auto max-w-5xl py-10">
+          <h6 id="projects" className="text-5xl text-center my-3">
+            Projects
+          </h6>
+          <Projects />
         </div>
       </div>
       <Contact />
