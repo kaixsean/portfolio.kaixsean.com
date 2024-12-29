@@ -28,11 +28,12 @@ module.exports = {
           500: '#5a7b6c',
         },
         customBlue: {
-          500: '#0339a5',
-          800: '#021f5a'
+          200: '#C4DEE3',
+          500: '#86B9C7',
+          800: '#0082A6'
         },
-        customOrange: {
-          500: '#ea7d42',
+        customBeige: {
+          500: '#F7F5ED',
           800: '#c95516'
         }
       },

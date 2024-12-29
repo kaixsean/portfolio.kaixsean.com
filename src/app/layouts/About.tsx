@@ -5,7 +5,7 @@ function About() {
         About
       </h6>
       <div className="flex flex-row">
-        <div className="basis-1/4 mt-5 border-t-2 border-customBrown-300 dark:border-y-customYellow-500"></div>
+        <div className="basis-1/4 mt-5 border-t-2 border-customBeige-500"></div>
         <div className="p-2 text-md md:text-xl">
           <p className="leading-relaxed">
             I am a full-stack engineer specializing in PHP and JavaScript, with
