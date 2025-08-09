@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         href="/favicons/favicon-16x16.png"
       />
       <body
-        className={`${inter.className} bg-customBrown-700 dark:bg-customBlack-900 text-gray-200`}
+        className={`${inter.className} bg-custom-brown-700 dark:bg-custom-black-900 text-gray-200`}
       >
         {children}
       </body>

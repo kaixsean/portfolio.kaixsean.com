@@ -14,7 +14,7 @@ function Navbar() {
   }
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-10 border-b border-customBrown-500/10 backdrop-blur shadow">
+    <div className="fixed top-0 left-0 right-0 z-10 border-b border-custom-brown-500/10 backdrop-blur-sm shadow-sm">
       <div className="flex flex-row justify-between items-center container mx-auto max-w-5xl p-3">
         <div>
           <Link href="/">
@@ -93,19 +93,19 @@ function Navbar() {
           </div>
         </div>
         <ul id="menu-mobile" className="hidden md:flex flex-row space-x-5">
-          <li className="text-xl hover:text-customBlue-800 dark:hover:text-customBlue-200">
+          <li className="text-xl hover:text-custom-blue-800 dark:hover:text-custom-blue-200">
             <Link href="/#about">About</Link>
           </li>
-          <li className="text-xl hover:text-customBlue-800 dark:hover:text-customBlue-200">
+          <li className="text-xl hover:text-custom-blue-800 dark:hover:text-custom-blue-200">
             <Link href="/#skills">Skills</Link>
           </li>
-          <li className="text-xl hover:text-customBlue-800 dark:hover:text-customBlue-200">
+          <li className="text-xl hover:text-custom-blue-800 dark:hover:text-custom-blue-200">
             <Link href="/#projects">Projects</Link>
           </li>
-          <li className="text-xl hover:text-customBlue-800 dark:hover:text-customBlue-200">
+          <li className="text-xl hover:text-custom-blue-800 dark:hover:text-custom-blue-200">
             <Link href="/#contact">Contact</Link>
           </li>
-          <li className="text-xl hover:text-customBlue-800 dark:hover:text-customBlue-200">
+          <li className="text-xl hover:text-custom-blue-800 dark:hover:text-custom-blue-200">
             <Link href="https://www.kaixsean.com" target="_blank">Blog</Link>
           </li>
         </ul>
