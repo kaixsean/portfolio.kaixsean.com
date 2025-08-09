@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid'
 
 function Skill(props) {
   return (
-    <li className="py-10 px-16 bg-customBlue-800 dark:bg-customBlue-500 rounded-lg hover:bg-customBlue-200 dark:hover:bg-customBlue-200 hover:text-customBlue-800">
+    <li className="py-10 px-16 bg-custom-blue-800 dark:bg-custom-blue-500 rounded-lg hover:bg-custom-blue-200 dark:hover:bg-custom-blue-200 hover:text-custom-blue-800">
       <div className="place-self-center">
         <div className="flex flex-col space-y-4 justify-center text-center">
           <Image
