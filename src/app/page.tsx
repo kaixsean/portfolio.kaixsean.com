@@ -1,10 +1,10 @@
-import Navbar from './layouts/Navbar'
-import Intro from './layouts/Intro'
 import About from './layouts/About'
-import SkillSide from './layouts/SkillSide'
-import Projects from './layouts/Projects'
 import Contact from './layouts/Contact'
 import Footer from './layouts/Footer'
+import Intro from './layouts/Intro'
+import Navbar from './layouts/Navbar'
+import Projects from './layouts/Projects'
+import SkillSide from './layouts/SkillSide'
 
 const BackendDATA = [
   { id: 'backend-01', name: 'PHP', src: 'php.svg' },
@@ -12,6 +12,9 @@ const BackendDATA = [
   { id: 'backend-03', name: 'MySQL', src: 'mysql-logo.svg' },
   { id: 'backend-04', name: 'MongoDB', src: 'mongodb.svg' },
   { id: 'backend-05', name: 'Linux', src: 'linux.svg' },
+  { id: 'backend-06', name: 'Laravel', src: 'laravel.svg' },
+  { id: 'backend-07', name: 'Codeigniter', src: 'codeigniter.svg' },
+  { id: 'backend-08', name: 'MariaDB', src: 'mariadb.svg' },
 ]
 
 const FrontendDATA = [
@@ -21,12 +24,14 @@ const FrontendDATA = [
   { id: 'frontend-04', name: 'jQuery', src: 'jquery.svg' },
   { id: 'frontend-05', name: 'HTML', src: 'html-5.svg' },
   { id: 'frontend-06', name: 'CSS', src: 'css-3.svg' },
+  { id: 'frontend-07', name: 'Vue', src: 'vue.svg' },
 ]
 
 const OtherDATA = [
   { id: 'other-01', name: 'Flutter', src: 'flutter.svg' },
   { id: 'other-02', name: 'Google Cloud Platform', src: 'google-cloud.svg' },
-  { id: 'other-03', name: 'Git Source Control', src: 'git.svg' },
+  { id: 'other-03', name: 'AWS', src: 'aws-logo.svg' },
+  { id: 'other-04', name: 'Git Source Control', src: 'git.svg' },
 ]
 
 export default function Home() {
