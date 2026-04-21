@@ -1,7 +1,7 @@
-import EmailIcon from '/public/icons/email.svg'
-import LocationIcon from '/public/icons/location-pin.svg'
-import LinkedinIcon from '/public/icons/linkedin.svg'
-import GithubIcon from '/public/icons/github.svg'
+import EmailIcon from '../../icons/email.svg'
+import LocationIcon from '../../icons/location-pin.svg'
+import LinkedinIcon from '../../icons/linkedin.svg'
+import GithubIcon from '../../icons/github.svg'
 
 function Contact() {
   return (
