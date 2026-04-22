@@ -42,17 +42,17 @@ export default function Home() {
         <Intro />
         <About />
         <div className="px-2 my-5 container mx-auto max-w-5xl py-10">
-          <h6 id="skills" className="text-5xl text-center my-3">
+          <h3 id="skills" className="text-5xl text-center my-3">
             Skills
-          </h6>
+          </h3>
           <SkillSide skills={BackendDATA} />
           <SkillSide skills={FrontendDATA} />
           <SkillSide skills={OtherDATA} />
         </div>
         <div className="px-2 my-5 container mx-auto max-w-5xl py-10">
-          <h6 id="projects" className="text-5xl text-center my-3">
+          <h3 id="projects" className="text-5xl text-center my-3">
             Projects
-          </h6>
+          </h3>
           <Projects />
         </div>
       </div>

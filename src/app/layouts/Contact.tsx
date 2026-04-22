@@ -1,7 +1,6 @@
 import EmailIcon from '../../icons/email.svg'
-import LocationIcon from '../../icons/location-pin.svg'
-import LinkedinIcon from '../../icons/linkedin.svg'
 import GithubIcon from '../../icons/github.svg'
+import LinkedinIcon from '../../icons/linkedin.svg'
 
 function Contact() {
   return (
@@ -13,9 +12,9 @@ function Contact() {
       </div>
       <div className="absolute inset-x-0 top-0">
         <div className="container mx-auto max-w-5xl">
-          <h6 id="contact" className="text-center text-3xl">
+          <h3 id="contact" className="text-center text-3xl">
             Contact Me
-          </h6>
+          </h3>
           <div className="flex flex-row space-x-3 justify-center my-14">
             <div className="border px-3 py-2 rounded-sm border-custom-blue-500 dark:border-custom-blue-500 bg-custom-blue-500 dark:bg-custom-blue-800">
               <a
