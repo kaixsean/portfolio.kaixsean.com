@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} bg-custom-brown-700 dark:bg-custom-black-900 text-gray-200`}
       >
+        <h1 className="sr-only">Kaixiang</h1>
         {children}
       </body>
       <GoogleAnalytics gaId="G-C1JJEYLZ2C" />

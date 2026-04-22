@@ -1,9 +1,9 @@
 function About() {
   return (
     <div className="my-5 container mx-auto max-w-5xl py-10 px-3">
-      <h6 id="about" className="text-3xl md:text-4xl py-2 font-medium">
+      <h3 id="about" className="text-3xl md:text-4xl py-2 font-medium">
         About
-      </h6>
+      </h3>
       <div className="flex flex-row">
         <div className="basis-1/4 mt-5 border-t-2 border-custom-beige-500"></div>
         <div className="p-2 text-md md:text-xl">

@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Projects() {
   return (
@@ -18,9 +18,9 @@ function Projects() {
               height={500}
               alt="UC UniK"
             />
-            <h3 className="my-2 text-center">
+            <h4 className="my-2 text-center">
               UC UniK Official Website
-            </h3>
+            </h4>
           </Link>
         </div>
         <div className="border border-0 rounded-lg border-2 bg-custom-blue-800 dark:bg-custom-blue-500 hover:bg-custom-blue-200 hover:text-custom-blue-800">
@@ -32,7 +32,7 @@ function Projects() {
               height={500}
               alt="WhaleFinder"
             />
-            <h3 className="my-2 text-center">WhaleFinder (Control Panel)</h3>
+            <h4 className="my-2 text-center">WhaleFinder (Control Panel)</h4>
           </Link>
         </div>
         <div className="border border-0 rounded-lg border-2 bg-custom-blue-800 dark:bg-custom-blue-500 hover:bg-custom-blue-200 hover:text-custom-blue-800">
@@ -44,7 +44,7 @@ function Projects() {
               height={500}
               alt="kaix blog"
             />
-            <h3 className="my-2 text-center">My Blog</h3>
+            <h4 className="my-2 text-center">My Blog</h4>
           </Link>
         </div>
       </div>

@@ -8,9 +8,9 @@ function Intro() {
           <div className="">
             <div className="flex flex-row space-x-3">
               <div className="text-2xl md:text-2xl lg:text-3xl">I&apos;M</div>
-              <h1 className="text-4xl md:text-3xl lg:text-5xl font-bold leading-7 md:leading-8 lg:leading-9 text-custom-beige-500">
+              <h2 className="text-4xl md:text-3xl lg:text-5xl font-bold leading-7 md:leading-8 lg:leading-9 text-custom-beige-500">
                 Kaixiang Chen
-              </h1>
+              </h2>
             </div>
             <div className="text-md md:text-xl lg:text-2xl my-7">
               Software Engineer and Web Developer
